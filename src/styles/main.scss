@@ -1,0 +1,51 @@
+.auth {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    background: #008073;
+    font-size: 16px;
+
+    &__header {
+        flex: 1;
+        padding: 20px;
+        text-align: center;
+        position: relative;
+        color: #fff;
+
+        h2 {
+            margin:0;
+            font-size: 35px;
+        }
+    }
+
+    &__type {
+        position: absolute;
+        bottom: 0;
+        font-size: 20px;
+        text-align: left;
+        font-weight: 500;
+    }
+
+    &__footer {
+        flex: 3;
+        padding: 30px 20px;
+        background: #fff;
+        border-radius: 15px 15px 0 0;
+    }
+
+    // material customized
+    .mat-icon {
+        margin-right: 10px;
+        color: #666;
+    }
+
+    button, a {
+        padding: 10px;
+        font-size: 1.1rem;
+        margin-bottom: 22px;
+    }
+}
+
+
+// material custimize

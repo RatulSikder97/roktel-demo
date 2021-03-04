@@ -1,25 +1,15 @@
-<p>Login</p>
 
-<mat-grid-list cols="1" rowHeight="100px">
-<form  (ngSubmit) = "onSubmit()" [formGroup]="adminData">
-    <mat-grid-tile>
-        <mat-form-field appearance="outline">
-            <mat-label>Email/ Mobile</mat-label>
-            <input formControlName="Email" matInput  placeholder="Enter your email or mobile">
-            <mat-icon matSuffix>sentiment_very_satisfied</mat-icon>
-        </mat-form-field>
-    </mat-grid-tile>
-    <mat-grid-tile>
-        <mat-form-field appearance="outline">
-            <mat-label>Password</mat-label>
-            <input type="password" formControlName="Password" matInput placeholder="Enter your password">
-            <mat-icon matSuffix>sentiment_very_satisfied</mat-icon>
-        </mat-form-field>
-    </mat-grid-tile>
-    <mat-grid-tile>
-        <button mat-stroked-button color="accent">Accent</button>
-    </mat-grid-tile>
+<form fxLayout = "column">
+    <mat-form-field appearance="outline" >
+        <mat-label>Email/ Mobile</mat-label>
+        <input  matInput  placeholder="Enter your email or mobile">
+        <mat-icon matPrefix>mail_outline</mat-icon>
+    </mat-form-field>
+    <mat-form-field  appearance="outline">
+        <mat-label>Password</mat-label>
+        <input type="password"  matInput placeholder="Enter your password">
+        <mat-icon matPrefix>password</mat-icon>
+    </mat-form-field>
+    <button mat-raised-button color="primary">Login</button>
+    <a [routerLink]="['/auth/register']" routerLinkActive="router-link-active"  mat-stroked-button color="primary">Register</a>
 </form>
-</mat-grid-list>
-
-

@@ -6,7 +6,8 @@ import { AuthComponent } from "@features/auth/auth.component";
 const routes: Routes = [
   {
     path: "",
-    component: AppComponent
+    pathMatch: "full",
+    redirectTo: "auth/login"
   },
   {
     path: 'auth',
